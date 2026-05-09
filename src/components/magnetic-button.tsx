@@ -31,7 +31,7 @@ export default function MagneticButton({ href, label }: MagneticButtonProps) {
       ref={ref}
       href={href}
       whileHover={{ scale: 1.02 }}
-      className="inline-flex items-center justify-center rounded-full bg-slate-950 px-8 py-4 text-sm font-semibold text-white shadow-2xl shadow-slate-900/15 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
+      className="inline-flex min-w-0 items-center justify-center rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white shadow-2xl shadow-slate-900/15 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 sm:px-8"
       onMouseMove={handleMouseMove}
       onMouseLeave={resetTransform}
     >

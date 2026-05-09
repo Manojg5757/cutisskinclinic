@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function LocationContactSection() {
 
   return (
-    <section id="book" className="relative px-6 pb-24 pt-20 lg:px-12">
+    <section id="book" className="relative px-4 pb-24 pt-16 sm:px-6 lg:px-12">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1fr] lg:items-start">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -25,7 +25,7 @@ export default function LocationContactSection() {
           </div>
 
           <div className="mt-8 rounded-[1.8rem] border border-slate-200/80 bg-white/85 p-6 shadow-xl shadow-slate-200/40">
-            <div className="mb-6 h-[360px] overflow-hidden rounded-[1.5rem] border border-slate-200/80">
+            <div className="mb-6 h-[260px] overflow-hidden rounded-[1.5rem] border border-slate-200/80 md:h-[360px]">
               <iframe
                 src="https://maps.google.com/maps?q=10.8199858,78.6841149&z=16&output=embed"
                 className="h-full w-full border-0"
@@ -53,7 +53,7 @@ export default function LocationContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="rounded-[2rem] border border-white/80 bg-white/80 p-8 shadow-2xl shadow-slate-200/30 backdrop-blur-xl"
+          className="rounded-[2rem] border border-white/80 bg-white/80 p-6 shadow-2xl shadow-slate-200/30 backdrop-blur-xl sm:p-8"
         >
           <span className="text-sm uppercase tracking-[0.35em] text-slate-500">Contact & directions</span>
           <h2 className="mt-3 text-3xl font-semibold text-slate-950">Visit Cutis Skin Clinic in Tennur.</h2>
