@@ -16,8 +16,9 @@ export const metadata: Metadata = {
   title: "Cutis Skin Clinic | Luxury Medical Landing Page",
   description: "Premium website template for high-end dermatology clinics in Tiruchirappalli, with conversion-focused design and motion-led storytelling.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
@@ -31,7 +32,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-slate-50 font-sans text-slate-950">{children}</body>
+      <body className="min-h-full bg-slate-50 font-sans text-slate-950">
+        {children}
+      </body>
     </html>
   );
 }
